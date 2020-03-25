@@ -59,7 +59,7 @@ gorouter 借鉴了httprouter的基数树实现方法。但当存在通配符和�
 
 ### Benchmark
 
-echo的[测试用例](https://github.com/vishr/web-framework-benchmark)编写了[gorouter-example](https://github.com/ihornet/gorouter-example)，跑了下基准测试，感觉性能还不错。因为功能简单可能占些便宜。
+引用echo的[测试用例](https://github.com/vishr/web-framework-benchmark)编写了[gorouter-example](https://github.com/ihornet/gorouter-example)，跑了下基准测试，感觉性能还不错。因为功能简单可能占些便宜。
 
 ```
 
