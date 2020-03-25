@@ -28,11 +28,11 @@ func main()  {
 		resp.Write([]byte("/teachers/list"))
 	})
 
-	router.GET("/teachers/:id/profile", func(resp http.ResponseWriter, req *http.Request, params *gorouter.Param) {
+	router.GET("/teachers/:id/profiles", func(resp http.ResponseWriter, req *http.Request, params *gorouter.Param) {
 		resp.Write([]byte(fmt.Sprintf("%s = %s", "id", params.GetValue("id"))))
 	})
 
-	router.GET("/teachers/:id/profile/:id", func(resp http.ResponseWriter, req *http.Request, params *gorouter.Param) {
+	router.GET("/teachers/:id/profiles/:id", func(resp http.ResponseWriter, req *http.Request, params *gorouter.Param) {
 		resp.Write([]byte(fmt.Sprintf("id1 = %s; id2 = %s", params.Values[0], params.Values[1])))
 	})
 
